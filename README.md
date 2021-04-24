@@ -11,6 +11,13 @@ Simple, customized next-starter template extended by:
 - Some basic tsconfig options
 - Some basic packages
 
+## Clone template
+
+```bash
+git clone --depth=1 --branch=main https://github.com/lukaaspl/next-starter.git my-project
+rm -rf ./my-project/.git
+```
+
 ## Getting Started
 
 First, run the development server:
