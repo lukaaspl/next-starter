@@ -1,13 +1,12 @@
-import { createApiRouter } from "utils/api-router";
+import { NextApiRequest, NextApiResponse } from "next";
+import nc from "next-connect";
 
-const router = createApiRouter();
+const handler = nc<NextApiRequest, NextApiResponse>()
+  .get((_, res) => {
+    res.send("Hello on the GET endpoint");
+  })
+  .post((_, res) => {
+    res.send("Hello on the POST endpoint");
+  });
 
-router.get((req, res) => {
-  res.send("Hello on the GET endpoint");
-});
-
-router.post((req, res) => {
-  res.send("Hello on the POST endpoint");
-});
-
-export default router.mount();
+export default handler;

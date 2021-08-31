@@ -6,7 +6,7 @@ Simple, customized next-starter template extended by:
 - Configured absolute imports
 - Configured ESLint with Prettier
 - Lint-staged with Husky hooks
-- Custom API router to handle endpoints nicely
+- Added next-connect library to handle endpoints nicely
 - Some basic folder structure
 - Some basic tsconfig options
 - Some basic packages
